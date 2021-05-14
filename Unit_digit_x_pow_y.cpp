@@ -1,4 +1,5 @@
-//Unit digit of x^y
+//Unit digit of x power y
+//Unit digit of xʸ
 //Using Look Up Tables
 
 //power % 2 == power & 1
