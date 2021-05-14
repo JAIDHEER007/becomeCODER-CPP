@@ -5,7 +5,6 @@
 //power % 2 == power & 1
 //power % 4 == power & 3
 
-
 #include<iostream>
 #include<vector>
 
