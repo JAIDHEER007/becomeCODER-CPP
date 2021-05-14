@@ -7,7 +7,6 @@
 using namespace std;
 
 int isAnagram(string str1, string str2){
-	if(str1.length() != str2.length()){ return false; }
 	
 	vector<int> alphabets_lower(26);
 	vector<int> alphabets_upper(26);
