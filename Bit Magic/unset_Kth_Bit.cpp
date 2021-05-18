@@ -1,5 +1,5 @@
 //Unset Kth bit
-//LSB is represented by 1ˢᵗ positon
+//LSB is represented by 1ˢᵗ position
 
 #include<iostream>
 using namespace std;
