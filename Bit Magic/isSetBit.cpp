@@ -21,8 +21,6 @@ int main(){
 /*
 	Bit Representation of 13
 	
-	13 			═══►		1		1		0		1
+	13 		═══►		1		1		0		1
 	position 	═══►		4		3		2		1
-	
-	
 */
