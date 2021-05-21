@@ -21,7 +21,7 @@ int XOR_Loop(int n){
 }
 
 //Main Focus
-//Effidcient Implementation
+//Efficient Implementation
 int XOR_No_Loop(int n){
 	switch(n % 4){
 		case 0: return n;
