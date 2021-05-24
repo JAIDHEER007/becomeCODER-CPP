@@ -20,9 +20,9 @@ int findMax(vector<int> &arr){
 
 int main(){
 	vector<int> arr{ 35, 394, -129, 341, 
-					 -151, 126, 342, 8, 
-					 -145, 389, -125, 249,
-					 -135, 2, -170, 310  };
+			 -151, 126, 342, 8, 
+			 -145, 389, -125, 249,
+			 -135, 2, -170, 310  };
 					 
 	cout<<"Min element: "<<findMin(arr)<<endl;
 	cout<<"Max element: "<<findMax(arr)<<endl;
