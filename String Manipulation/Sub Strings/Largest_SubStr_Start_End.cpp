@@ -80,3 +80,27 @@ now return the substring.
 
 The substring length will be (end_pos - start_pos + 1)
 */
+
+/*
+Output:
+ASFJGHOGAKZZ
+ASFJGHOGAKZZ
+ThisIsATest
+ThisIsATest
+ThisIsAT
+ThisIsAT
+J
+J
+r
+r
+
+
+
+
+
+
+
+--------------------------------
+Process exited after 0.2123 seconds with return value 0
+Press any key to continue . . .
+*/
