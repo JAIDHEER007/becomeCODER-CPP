@@ -1,4 +1,5 @@
 //Substring
+//a substring is a contiguous sequence of characters within a string
 
 #include<iostream>
 using namespace std;
