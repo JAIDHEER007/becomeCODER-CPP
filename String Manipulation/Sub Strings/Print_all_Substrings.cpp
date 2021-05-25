@@ -37,7 +37,7 @@ jaid
 jaidh
 jaidhe
 jaidhee
-jaidheer						Total Substrings Starting with 'j': 8
+jaidheer			Total Substrings Starting with 'j': 8
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 j	a	i	d	h	e	e	r
@@ -49,7 +49,7 @@ aid
 aidh
 aidhe
 aidhee
-aidheer							Total Substrings Starting with 'a': 7
+aidheer				Total Substrings Starting with 'a': 7
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 j	a	i	d	h	e	e	r
@@ -60,7 +60,7 @@ id
 idh
 idhe
 idhee
-idheer							Total Substrings Starting with 'i': 6
+idheer				Total Substrings Starting with 'i': 6
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 j	a	i	d	h	e	e	r
@@ -70,7 +70,7 @@ d
 dh
 dhe
 dhee
-dheer							Total Substrings Starting with 'd': 5
+dheer				Total Substrings Starting with 'd': 5
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 j	a	i	d	h	e	e	r
@@ -79,7 +79,7 @@ j	a	i	d	h	e	e	r
 h
 he
 hee
-heer							Total Substrings Starting with 'h': 4
+heer				Total Substrings Starting with 'h': 4
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 j	a	i	d	h	e	e	r
@@ -87,20 +87,20 @@ j	a	i	d	h	e	e	r
 
 e
 ee
-eer								Total Substrings Starting with 'e': 3
+eer				Total Substrings Starting with 'e': 3
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 j	a	i	d	h	e	e	r
         				^
 
 e
-er								Total Substrings Starting with 'e': 2
+er				Total Substrings Starting with 'e': 2
 ----------------------------------------------------------------------
 ----------------------------------------------------------------------
 j	a	i	d	h	e	e	r
         					^
 
-r								Total Substrings Starting with 'r': 1
+r				Total Substrings Starting with 'r': 1
 ----------------------------------------------------------------------
 
 
