@@ -37,13 +37,12 @@ int main(){
 	auto start = chrono::high_resolution_clock::now();
 	string test = "ldacwlgjoxxneprtfwsyinxfxaymptcpherarjqjtlnqesbepgqlbmyfbxjetflovvhlxqaqxipjhsqioilnloedlmgbfowfbfgydqjtzxpwgrnvamzpaqoywpxysvxodeagaraovptthijilulyodxskodfxqhpprywwqnjqzqwxrlwpinfjrywarqyeltqaymoohzwwecqtqiopaxqlqxexolusoaxpjtmxawrnsvcosyaieaqyseizhlnjjeoqfqqqwckboqyojqujoqqloljhqwlqcwxyghcqllhsbyoqajeixqwogqsfavtyoqkecvgqdrmslxqwriaqeiepkypkpreqbqprwoengaqvebkqpkxrqqadaavxoxaxwtknussnsqhnrsxxhqjdfmdolyqeqhglywarawytaqrropfrgxrekoseyapnjrboulpsjohqryipxwwopgoyemwroaoojsrttogafpmxfecsokgqiyhcono";
 	cout<<removeRepeating(test)<<endl;
-	cout<<removeRepeating(test)<<endl;
 	auto end = chrono::high_resolution_clock::now();
 	
 	auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
 	cout<<endl<<duration.count()<<" ms"<<endl;
 	
-	Time Taken: 4785 ms
+	Time Taken: 3384 ms
 */	
 
 	return 0;
@@ -59,16 +58,16 @@ using stack DS initialized to accept characters
 
 2. initally stack is empty
 
-|		|
-|		|
+|	|
+|	|
 ---------
 
 3. As stack is empty, push the traversed character into the stack
    Here push 'A' into the stack
    
-|		|
+|	|
 ---------		So top of the stack is 'A'
-|	A	|
+|   A	|
 ---------
    
 4. Now check the traversed charcters with the top of stack 
@@ -81,9 +80,9 @@ Top of the stack = 'A'
 
 pop the stack and push 'A'
 
-|		|
+|	|
 ---------		So top of the stack is 'A'
-|	A	|
+|   A	|
 ---------
 
 But by close observation, poping and pushing the same character are inverse operations
@@ -98,34 +97,43 @@ Top of the stack = 'A'
 
 push 'B' to the stack
 
-|		|
+|	|
 ---------
-|	B	|
+|   B	|
 ---------
-|	A	|
+|   A	|
 ---------
 
 6. Taversed character is 'B' where as stack top is 'B'. So, skip the loop
 
-|		|
+|	|
 ---------
-|	B	|
+|   B	|
 ---------
-|	A	|
+|   A	|
 ---------
 
 7. Taversed character is 'A' where as stack top is 'B'. So, push 'A' to stack
 
-|		|
+|	|
 ---------
-|	A	|
+|   A	|
 ---------
-|	B	|
+|   B	|
 ---------
-|	A	|
+|   A	|
 ---------
 
 Now the required result is the string formed by traversing the stack from bottom to top
 
+*/
+
+/*
+OUTPUT:
+jaidher
+a
+a
+QWERTY
+ABA
 */
 
