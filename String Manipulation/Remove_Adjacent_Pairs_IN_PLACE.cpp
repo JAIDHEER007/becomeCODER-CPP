@@ -27,4 +27,13 @@ int main(){
 	
 }
 
+/*
+OUTPUT:
+jaidhr
+a
 
+QWERTY
+A
+*/
+
+//Hackerrank Problem: Super Reduced String
