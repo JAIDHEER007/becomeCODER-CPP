@@ -38,3 +38,15 @@ Idea behind it is same as Remove_Repeating_OUT_OF_PLACE but,
 we will pop the stack if traversed character is same as that of stack top.
 In this way we will remove any adjacent pair of same characters.
 */
+
+/*
+OUTPUT:
+jaidhr
+a
+
+QWERTY
+A
+
+*/
+
+//Hackerrank Problem: Super Reduced String
