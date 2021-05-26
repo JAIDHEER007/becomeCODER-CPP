@@ -4,6 +4,8 @@ using namespace std;
 
 //HACKERRANK PROBLEM
 //Alternating Characters
+//HACKEREARTH PROBLEM
+//Unique subsequences
 
 //TLE APPROACH
 /*
