@@ -26,7 +26,7 @@ int main(){
 	cout<<uniqueSubsequence("AAB")<<endl;					//AB
 	cout<<uniqueSubsequence("CCA")<<endl;					//CA
 	cout<<uniqueSubsequence("ADA")<<endl;					//AD
-	cout<<uniqueSubsequence("AAABBBDDDCCCEEEABCD")<<endl;	//ABDCE
+	cout<<uniqueSubsequence("AAABBBDDDCCCEEEABCD")<<endl;			//ABDCE
 	
 	return 0;
 }
@@ -85,15 +85,15 @@ string.
 
 ►► if the input string is restricted to lowercase, uppercase, numeric values this method can be used 
 
-► The idea is to flag array declared to accept boolean value for all 26 alphabets
+► The idea is to use a flag array declared to accept boolean value for all 26 alphabets
 
 ► Here in C++, a vector declared to accept boolean values is initalized to false automatically
 
-► The hash of each alphabet is given by (taversed character - 'A') (For this problem all string is in upper case)
+► The hash of each alphabet is given by (taversed character - 'A') (For this problem the string is in upper case)
 
 ► Now Traverse the string from left to right
 
-► if hash value of a the traversed character given by hash formula, (taversed character - 'A') is false
+► if hash value of a traversed character given by hash formula, (taversed character - 'A') is false
 
 ► Then add the character to output string and set the hash value to true
 
@@ -101,7 +101,7 @@ string.
 
 ► In this way, we can determine if the trvaersed charcater is present in the output string or not in O(1) time.
 
-■ a single boolean variable taken 1 byte of space in c++;
+■ a single boolean variable taken 1 byte of space in C++;
 
 ■ vector<bool> alphabets(26) ==> 40 bytes of space due to library functions
 
