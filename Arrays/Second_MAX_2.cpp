@@ -25,7 +25,7 @@ int main(){
 	cout<<secondMAX(arr)<<endl;
 	
 	vector<int> arr2{-4, -146, 128, 89, -178,
-					 -56, -170, -101, 31, -61 };
+			-56, -170, -101, 31, -61 };
 					 
 	cout<<secondMAX(arr2)<<endl;
 	
