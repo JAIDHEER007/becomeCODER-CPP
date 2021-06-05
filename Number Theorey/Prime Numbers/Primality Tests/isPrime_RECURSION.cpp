@@ -4,7 +4,7 @@
 #include<iostream>
 using namespace std;
 
-bool isPrime(int n, int i){
+bool isPrime(long n, long long i){
 	if((i * i) <= n){
 		if((n % i == 0) || (n % (i+2) == 0))
 			return false;
@@ -14,7 +14,7 @@ bool isPrime(int n, int i){
 		return true; 
 }
 
-bool isPrime(int n){
+bool isPrime(long n){
 	if(n == 1)
 		return false;
 	if((n == 2) || (n == 3))
@@ -35,6 +35,7 @@ int main(){
 	cout<<isPrime(10009)<<endl;			//True
 	cout<<isPrime(644913)<<endl;			//False
 	cout<<isPrime(11987167)<<endl; 			//True
+	cout<<isPrime(INT_MAX)<<endl;			//True
 	
 	return 0;
 }
