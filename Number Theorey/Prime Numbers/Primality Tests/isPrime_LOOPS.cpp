@@ -11,7 +11,7 @@ bool isPrime(long n){
 		return true;
 	if((n % 2 == 0) || (n % 3 == 0))
 		return false;
-	for(long i=5;(i*i)<=n;i+=6){
+	for(long long i=5;(i*i)<=n;i = i + 6){
 		if((n % i == 0) || (n % (i+2) == 0))
 			return false;
 	}
@@ -28,6 +28,7 @@ int main(){
 	cout<<isPrime(10009)<<endl;			//True
 	cout<<isPrime(644913)<<endl;			//False
 	cout<<isPrime(11987167)<<endl; 			//True
+	cout<<isPrime(INT_MAX)<<endl;			//True
 	
 	return 0;
 }
