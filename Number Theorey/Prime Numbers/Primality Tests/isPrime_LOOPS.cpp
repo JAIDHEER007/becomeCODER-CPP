@@ -24,10 +24,10 @@ int main(){
 	cout<<isPrime(53)<<endl;			//True
 	cout<<isPrime(27)<<endl; 			//False
 	cout<<isPrime(19)<<endl;			//True
-	cout<<isPrime(553007)<<endl;		//False
+	cout<<isPrime(553007)<<endl;			//False
 	cout<<isPrime(10009)<<endl;			//True
-	cout<<isPrime(644913)<<endl;		//False
-	cout<<isPrime(11987167)<<endl; 		//True
+	cout<<isPrime(644913)<<endl;			//False
+	cout<<isPrime(11987167)<<endl; 			//True
 	
 	return 0;
 }
