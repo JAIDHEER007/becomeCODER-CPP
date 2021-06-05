@@ -13,6 +13,7 @@ bool isPrime(int number){
 }
 
 int main(){
+	
 	cout<<boolalpha<<isPrime(1)<<endl;
 	cout<<boolalpha<<isPrime(2)<<endl;
 	cout<<boolalpha<<isPrime(3)<<endl;
