@@ -37,8 +37,8 @@ int maxCuts(int N, int a, int b, int c){
 }
 
 int main(){
-//	cout<<maxCuts(4,1,2,4)<<endl;
-//	cout<<maxCuts(10,4,3,2)<<endl;
+	cout<<maxCuts(4,1,2,4)<<endl;
+	cout<<maxCuts(10,4,3,2)<<endl;
 	cout<<maxCuts(100,3,7,9)<<endl;
 	
 	return 0;
