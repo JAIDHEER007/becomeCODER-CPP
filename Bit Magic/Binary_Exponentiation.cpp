@@ -1,4 +1,4 @@
-//Binary Exponentation
+//Binary Exponentiation
 //using Loops and Recursion
 
 #include<iostream>
@@ -46,7 +46,7 @@ int main(){
 	cout<<binaryExponentation_R(53,7)<<endl;
 	
 	//Overflow
-	//Long Long Max Limit: 2
+	//Long Long Max Limit: 2⁶³ - 1
 	cout<<naiveExponentation(2,63)<<endl;
 	cout<<binaryExponentation_L(2,63)<<endl;
 	cout<<binaryExponentation_R(2,63)<<endl;
