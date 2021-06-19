@@ -1,4 +1,5 @@
 //Binary Exponentiation
+//Reference Link: https://en.wikipedia.org/wiki/Exponentiation_by_squaring
 //using Loops and Recursion
 
 #include<iostream>
