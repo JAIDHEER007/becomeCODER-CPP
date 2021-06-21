@@ -33,7 +33,7 @@ if __name__ == '__main__':
     print(trailingZeroes(553))
     print(trailingZeroes(625))
     print(trailingZeroes(10000))
-    # print(trailingZeroes(553007)) Dont Do it TLS
+    # print(trailingZeroes(553007)) Dont Do it TLE
     
     print(trailingZeroes_Efficient(8))
     print(trailingZeroes_Efficient(10))
