@@ -1,5 +1,6 @@
 //LC 171. Excel Sheet Column Number
 //Link: https://leetcode.com/problems/excel-sheet-column-number/
+//Reference Link: https://github.com/JAIDHEER007/becomeCODER-CPP/blob/aa224af9856080b9049fc76c15359cd9cf29d3ed/PDF/LC_171_168_EXCEL_SHEET.pdf
 
 #include<iostream>
 using namespace std;
