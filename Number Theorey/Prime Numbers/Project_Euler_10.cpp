@@ -7,7 +7,7 @@
 #include<algorithm>
 using namespace std;
 
-#define MAX 1000000		//Exact Number for which Prime number which is < 10^6 will occur
+#define MAX 1000000		//Exact Number for which Prime number which is < 10⁶ will occur
 
 vector<int> primes;
 
@@ -41,7 +41,7 @@ int main(){
 	
 	cout<<primeSum(5)<<endl;
 	cout<<primeSum(10)<<endl;
-	cout<<primeSum(1000000)<<endl; //10^6
+	cout<<primeSum(1000000)<<endl; //10⁶
 	
 	return 0;
 }
