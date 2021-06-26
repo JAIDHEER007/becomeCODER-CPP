@@ -6,7 +6,7 @@
 using namespace std;
 
 #define MAX_SIZE 10001
-#define MAX 104730		//Exact Number for which 10001 Primes will occur
+#define MAX 104730		//Exact Number for which 10000 Primes will occur
 				//Found it by Trail and Error 
 
 vector<int> prime;
@@ -34,7 +34,7 @@ int main(){
 	cout<<prime[10000]<<endl<<endl;
 	
 	
-	int prime_size = prime.size();
+	int prime_size = prime.size()-1; 	//Primes[0] is -1
 	cout<<prime_size<<endl;
 	for(int i=0;i<prime_size;i++)
 		cout<<(i+1)<<'\t'<<prime[i]<<endl;
