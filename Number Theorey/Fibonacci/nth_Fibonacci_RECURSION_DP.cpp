@@ -17,10 +17,9 @@ int Fib(int n){
 
 int nthFib(int n){
 	if(n > max_query){
-		for(int i=max_query+1;i<=n;i++){
+		for(int i=max_query+1;i<=n;i++)
 			dp[i] = -1;
-			max_query = n;
-		}
+		max_query = n;
 		return Fib(n);
 	}
 	return dp[n];
