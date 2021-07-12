@@ -6,27 +6,27 @@
 using namespace std;
 
 int getMaxDeletions(string moves){
-	pair<int,int> initial;
-	pair<int,int> final;
+	pair<int,int> start;
+	pair<int,int> end;
 	
 	for(char move:moves){
 		switch(move){
 			case 'U': 
-				++(final.first);
+				++(end.first);
 				break;
 			case 'D':
-				--(final.first);
+				--(end.first);
 				break;
 			case 'R':
-				++(final.second);
+				++(end.second);
 				break;
 			case 'L':
-				--(final.second);
+				--(end.second);
 				break;
 		}	
 	}
-	int v_diff = final.first - initial.first;
-	int h_diff = final.second - initial.second;
+	int v_diff = end.first - start.first;
+	int h_diff = end.second - start.second;
 	
 	return (moves.length() - (v_diff+h_diff));
 }
