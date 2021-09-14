@@ -1,5 +1,5 @@
 // Fractional Knapsack Problem using Greedy Method
-//Using Lambda Functions for sort
+// Using Lambda Functions for sort
 
 #include<iostream>
 #include<vector>
