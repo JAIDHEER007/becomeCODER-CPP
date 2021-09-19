@@ -1,77 +1,71 @@
-//Zig Zag Array
-
-#include<bits/stdc++.h>
+#include<iostream>
+#include<vector>
 #define NeedForSpeed ios_base::sync_with_stdio(false); cin.tie(NULL);
-using namespace std;
 
-int LH(vector<int> arr){
-	int operations = 0; 
-	int i = 0;
-	int j = i + 1;
-	int k = j + 1;
-	int arr_size = arr.size();
-	
-	while(k < arr_size){
-		if((arr[i]>=arr[j])&&(arr[j]>arr[k])){
-			arr[i] = INT_MIN;
-			++operations; 
-		}
-		else if((arr[i]<arr[j])&&(arr[j]<=arr[k])){
-			arr[k] = INT_MIN;
-			++operations;
-		}
-		else if((arr[i]>=arr[j])&&(arr[j]<=arr[k])){
-			arr[j] = INT_MAX;
-			++operations;
-		}
-		i = k;
-		j = i + 1;
-		k = j + 1;
-	}
-	if(j != arr_size){
-		if(arr[j] < arr[j-1]){
-			arr[j] = INT_MAX; 
-			++operations;
-		}
-	}
-	return operations;
+using namespace std; 
+
+int LHoperation(vector<int> arr){
+    int count = 0; 
+    int toggle = false; 
+    int limit = arr.size() - 1; 
+    for(int i=0;i<limit;++i){
+        if(!toggle){
+            if((arr[i] >= arr[i+1]) && (arr[i+1] <= arr[i+2])){
+                arr[i+1] = INT_MAX; 
+                ++count; 
+            }
+            else if(arr[i] >= arr[i+1]){
+                arr[i] = INT_MIN; 
+                ++count; 
+            }
+            toggle = true; 
+        }else{
+            if((arr[i] <= arr[i+1]) && (arr[i+1] >= arr[i+2])){
+                arr[i+1] = INT_MIN; 
+                ++count; 
+            }
+            else if(arr[i] <= arr[i+1]){
+                arr[i] = INT_MAX; 
+                ++count; 
+            }
+            toggle = false; 
+        }
+    }
+    return count; 
 }
 
-int HL(vector<int> arr){
-	int operations = 0;
-	int i = 0;
-	int j = i + 1;
-	int k = j + 1;
-	int arr_size = arr.size();
-	
-	while(k < arr_size){
-		if((arr[i]<=arr[j])&&(arr[j]<arr[k])){
-			arr[i] = INT_MAX;
-			++operations;
-		}
-		else if((arr[i]>arr[j])&&(arr[j]>=arr[k])){
-			arr[k] = INT_MAX;
-			++operations;
-		}
-		else if((arr[i]<=arr[j])&&(arr[j]>=arr[k])){
-			arr[j] = INT_MIN;
-			++operations;
-		}
-		i = k;
-		j = i + 1;
-		k = j + 1;
-	}
-	if(j != arr_size){
-		if(arr[j] > arr[j-1]){
-			arr[j] = INT_MIN; 
-			++operations;
-		}
-	}
-	return operations; 
+int HLoperation(vector<int> arr){
+    int count = 0; 
+    int toggle = false; 
+    int limit = arr.size() - 1; 
+    for(int i=0;i<limit;++i){
+        if(!toggle){
+            if((arr[i] <= arr[i+1]) && (arr[i+1] >= arr[i+2])){
+                arr[i+1] = INT_MIN; 
+                ++count; 
+            }
+            else if(arr[i] <= arr[i+1]){
+                arr[i] = INT_MAX; 
+                ++count; 
+            }
+            toggle = true; 
+        }else{
+            if((arr[i] >= arr[i+1]) && (arr[i+1] <= arr[i+2])){
+                arr[i+1] = INT_MAX; 
+                ++count; 
+            }
+            else if(arr[i] >= arr[i+1]){
+                arr[i] = INT_MIN; 
+                ++count; 
+            }
+            toggle = false; 
+        }
+    }
+    return count; 
 }
 
 int minOperations(vector<int> arr){
-	return min(LH(arr),HL(arr));
+	return min(LHoperation(arr), HLoperation(arr));
 }
 
 int main(){
@@ -87,6 +81,3 @@ int main(){
 	
 	return 0;
 }
-
-
-
