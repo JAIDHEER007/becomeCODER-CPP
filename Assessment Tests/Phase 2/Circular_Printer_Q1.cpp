@@ -1,6 +1,9 @@
 //Question 1
 //Circular Printer
 
+// Similar Question in LeetCode: 1974. Minimum Time to Type Word Using Special Typewriter
+//Link: https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/
+
 #include<bits/stdc++.h>
 #define NeedForSpeed ios_base::sync_with_stdio(false); cin.tie(NULL);
 using namespace std;
