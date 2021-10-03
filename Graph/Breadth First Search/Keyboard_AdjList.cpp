@@ -20,19 +20,19 @@ map<int, vector<int>> getAdjList(string keypad){
 	
 	//Diamond
 	adjList[ctoi(keypad[1])] = {ctoi(keypad[0]), ctoi(keypad[2]), 
-								ctoi(keypad[3]), ctoi(keypad[5]), ctoi(keypad[4])};
+				    ctoi(keypad[3]), ctoi(keypad[5]), ctoi(keypad[4])};
 	adjList[ctoi(keypad[3])] = {ctoi(keypad[0]), ctoi(keypad[6]), 
-								ctoi(keypad[1]), ctoi(keypad[7]), ctoi(keypad[4])};
+				    ctoi(keypad[1]), ctoi(keypad[7]), ctoi(keypad[4])};
 	adjList[ctoi(keypad[5])] = {ctoi(keypad[2]), ctoi(keypad[8]), 
-								ctoi(keypad[1]), ctoi(keypad[7]), ctoi(keypad[4])};
+				    ctoi(keypad[1]), ctoi(keypad[7]), ctoi(keypad[4])};
 	adjList[ctoi(keypad[7])] = {ctoi(keypad[6]), ctoi(keypad[8]), 
-								ctoi(keypad[3]), ctoi(keypad[5]), ctoi(keypad[4])};
+				    ctoi(keypad[3]), ctoi(keypad[5]), ctoi(keypad[4])};
 	
 	//Centre
 	adjList[ctoi(keypad[4])] = {ctoi(keypad[0]), ctoi(keypad[1]),
-								ctoi(keypad[2]), ctoi(keypad[3]),
-								ctoi(keypad[6]), ctoi(keypad[4]),
-								ctoi(keypad[8]), ctoi(keypad[7]),}; 
+				    ctoi(keypad[2]), ctoi(keypad[3]),
+				    ctoi(keypad[6]), ctoi(keypad[4]),
+				    ctoi(keypad[8]), ctoi(keypad[7]),}; 
 	
 	return adjList; 
 }
