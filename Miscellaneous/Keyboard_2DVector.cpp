@@ -24,7 +24,7 @@ int entryTime(string keypad, string code){
 	
 	for(int i=1;i<code.length();++i)
 		totalTime += max(abs(timeArr[ctoi(code[i - 1])][0] - timeArr[ctoi(code[i])][0]),
-						 abs(timeArr[ctoi(code[i - 1])][1] - timeArr[ctoi(code[i])][1]));
+				 abs(timeArr[ctoi(code[i - 1])][1] - timeArr[ctoi(code[i])][1]));
 	
 	return totalTime; 
 }
