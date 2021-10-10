@@ -86,5 +86,20 @@ int rangeBitwiseAnd(int left, int right){
 * Runtime: 12 ms
 * Memory Usage: 5.9 MB
 ---
-More Approaches to Come!
+### Efficient Solution 2
+**<a href=https://youtu.be/-qrpJykY2gE>Excellent Explanation by TECH DOSE</a>**
+```
+int rangeBitwiseAnd(int left, int right) {
+    int step = 0;
+    while(left != right){
+        left >>= 1; 
+        right >>= 1; 
+        ++step;
+    }
+    return left << step; 
+}
+```
+* Runtime: 8 ms
+* Memory Usage: 5.7 MB
+
 
