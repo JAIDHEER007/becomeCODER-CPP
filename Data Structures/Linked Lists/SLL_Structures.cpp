@@ -30,17 +30,21 @@ void print(node* head){
 	cout<<endl; 
 }
 
-node* makeSLL(){
-	node* arr[10];
-	for(int i = 1; i <= 10; i++){
+node* makeSLL(int length){
+	if(length == 0) return NULL; 
+	if(length == 1) return getNode(1); 
+	
+	node* arr[length];
+	for(int i = 1; i <= length; i++){
 		arr[i - 1] = getNode(i); 
 		if(i >= 2)
 			arr[i - 2]->next = arr[i - 1]; 
 	}
 	return arr[0]; 
 }
+
 int main(){
-	node* head = makeSLL(); 
+	node* head = makeSLL(10); 
 	
 	print(head); 
 	
