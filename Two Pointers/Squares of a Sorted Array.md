@@ -1,4 +1,4 @@
-# 77 Squares of a Sorted Array
+# 977 Squares of a Sorted Array
 ### <a href = 'https://leetcode.com/problems/squares-of-a-sorted-array/'>Link to LeetCode</a>
 
 Given an integer array nums sorted in **non-decreasing order**, <br>return an array of **the squares of each number** sorted in non-decreasing order.
@@ -40,6 +40,29 @@ So max sqaured value might be the sqaure of largest positive element or the sqau
 Largest positive element will be on the right side of the input array. <br>
 Least negative number will be on the left side of the input array. <br>
 <br>
+<img src='https://github.com/JAIDHEER007/Random-Programs/blob/main/LC_977.gif' alt='Dry run with example 2'>
+<br>
+```
+vector<int> sortedSquares(vector<int>& nums) {
+	vector<int> result(nums.size()); 
+	        
+	int i = 0; 
+	int j = nums.size() - 1; 
+	int k = nums.size() - 1; 
+	        
+	while(k >= 0){
+		if(abs(nums[i]) > abs(nums[j])){
+			result[k] = (nums[i] * nums[i]); 
+		    ++i;
+		}else{
+			result[k] = (nums[j] * nums[j]); 
+		    --j; 
+		}
+		--k;
+	}
+	return result; 
+}
+```
 
 
 
